@@ -1,5 +1,9 @@
 Roblox Tracker
 
+it will say virus detected on windows but its not since i built it only for Roblox Tracking
+and then check for constant updates for window version will get updates once a while since working on a sqlite3 store in JavaScript
+to connect to roblox then saves to u and only u
+
 A Node.js-based session and gameplay tracker for Roblox that monitors
 running state, detects in-game activity through log files, and records
 session/game duration along with real-time performance stats like FPS
