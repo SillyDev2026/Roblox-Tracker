@@ -1,5 +1,17 @@
 Roblox Tracker
 
+also if u want it to run automatically go to task-manager for windows
+find the download then let it run on startup so u can track ur session for roblox
+and then it will let u know at the close of roblox
+
+example
+[Game]: Rivals joined
+
+once u close roblox it will show
+-----------------
+1h 32m 30s played
+-----------------
+
 it will say virus detected on windows but its not since i built it only for Roblox Tracking
 and then check for constant updates for window version will get updates once a while since working on a sqlite3 store in JavaScript
 to connect to roblox then saves to u and only u
