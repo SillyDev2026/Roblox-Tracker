@@ -6,6 +6,7 @@ A Node.js-based Roblox session tracking tool that monitors gameplay activity, de
 
 ## Terminal Preview
 
+<img src="https://github.com/user-attachments/assets/20f5c506-df94-4f92-9b9f-cf9453a21607" width="354" height="251" />
 Terminal screenshot included in repository assets.
 
 ---
