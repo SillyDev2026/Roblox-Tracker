@@ -1,10 +1,23 @@
 Roblox Tracker
 
+steps on window
+
+Press Win + R
+
+Type:
+
+shell:startup
+
+Press Enter
+A folder opens
+Drop your .exe (or a shortcut to it) inside
+
 also if u want it to run automatically go to task-manager for windows
 find the download then let it run on startup so u can track ur session for roblox
 and then it will let u know at the close of roblox
 
 example
+
 [Game]: Rivals joined
 
 once u close roblox it will show
