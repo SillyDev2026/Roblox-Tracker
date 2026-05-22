@@ -1,0 +1,24 @@
+must use bash in vsc or in or use git
+npm install -g pkg -- to run pkg install
+
+all types of installation
+
+echo "Cleaning old builds..."
+rm -rf dist
+mkdir dist
+
+echo "Building Windows exe..."
+pkg . --targets node18-win-x64 --output dist/app-win.exe
+
+echo "Building macOS binary..."
+pkg . --targets node18-macos-x64 --output dist/app-macos
+
+echo "Building Linux binary..."
+pkg . --targets node18-linux-x64 --output dist/app-linux
+
+echo "Done! Files are in /dist"
+
+exec type
+chmod +x build.sh
+then run
+./build.sh
