@@ -117,10 +117,14 @@ Roadmap
 
 ------------------------------------------------------------
 Images
-<img width="547" height="144" alt="image" src="https://github.com/user-attachments/assets/05d5fffd-a1ea-45e1-a8bb-7fe3c0031416" />
+# at startup
+<img width="217" height="140" alt="image" src="https://github.com/user-attachments/assets/90a3a745-dc29-47f6-a198-e223c59c6e07" />
 
-<img width="283" height="133" alt="image" src="https://github.com/user-attachments/assets/c6dd1ae8-ab9e-49bc-96e2-f92c7e586224" />
+#saving state
+<img width="258" height="45" alt="image" src="https://github.com/user-attachments/assets/a7a4455d-a5b3-424a-921b-685c3e602dd2" />
 
-<img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/14ca02c2-5b07-4921-ab55-c77af6eba49f" />
+# full image
+<img width="324" height="220" alt="image" src="https://github.com/user-attachments/assets/4ad60d35-cb34-4d63-ac6c-5e1abf2d85a4" />
+
 ------------------------------------------------------------
 License: MIT
