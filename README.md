@@ -1,60 +1,60 @@
-# Roblox Session Tracker
+Roblox Session Tracker (Windows)
 
-A Node.js-based Roblox session tracking tool that monitors gameplay activity, detects active sessions, and logs playtime statistics using local system and log file analysis.
+A lightweight Node.js Windows-only tool that tracks Roblox gameplay sessions by monitoring the Roblox process and reading local log files. It records playtime, detects session changes, and provides real-time activity stats.
 
----
+------------------------------------------------------------
 
-## Terminal Preview
+Preview
 
-<img src="https://github.com/user-attachments/assets/20f5c506-df94-4f92-9b9f-cf9453a21607" width="354" height="251" />
-Terminal screenshot included in repository assets.
+Terminal output showing live session tracking.
 
----
+------------------------------------------------------------
 
-## Overview
+Overview
 
-This tool tracks Roblox activity on a Windows system by monitoring the Roblox process and reading local log files. It records session duration, detects when a user joins or leaves a game, and retrieves basic game information through Roblox APIs.
+This tool runs locally on Windows and continuously monitors:
+- Roblox process activity
+- Local Roblox log files
+- Active gameplay sessions
 
-It is designed for personal analytics and gameplay tracking.
+It automatically detects when you join or leave a game and logs session data such as playtime and basic game metadata.
 
----
+------------------------------------------------------------
 
-## Features
+Features
 
-- Detects when Roblox starts and closes  
-- Tracks individual gameplay sessions  
-- Logs total playtime per session  
-- Identifies when a player joins or leaves a game  
-- Retrieves game name using Roblox API (PlaceId → UniverseId)  
-- Estimates FPS and network ping (approximate values)  
-- Reads and parses Roblox log files for session detection  
-- Real-time terminal status display  
+- Detects when Roblox launches and closes
+- Tracks individual game sessions
+- Logs total playtime per session
+- Detects game joins/leaves in real time
+- Fetches game title via Roblox API (PlaceId -> UniverseId)
+- Estimates FPS and ping (approximate)
+- Reads Roblox local logs for session detection
+- Real-time terminal status display
 
----
+------------------------------------------------------------
 
-## How It Works
+How It Works
 
-The script continuously monitors the Roblox process and scans local log directories for activity changes.
+1. Process Monitoring
+- Detects Roblox Player start/stop
 
-When a session begins:
-- Detects Roblox launch
-- Extracts PlaceId from logs
-- Converts PlaceId to UniverseId via Roblox API
-- Fetches the game title
-- Starts session tracking
+2. Log Analysis
+- Reads local Roblox log files
+- Extracts PlaceId and session events
 
-During gameplay:
-- Periodically estimates FPS
-- Checks network ping
-- Updates live terminal status
+3. API Lookup
+- Converts PlaceId -> UniverseId
+- Retrieves game name from Roblox API
 
-When Roblox closes:
-- Finalizes session duration
-- Outputs summary statistics
+4. Session Tracking
+- Starts timer on game join
+- Tracks stats during gameplay
+- Ends session on exit
 
----
+------------------------------------------------------------
 
-## Example Output
+Example Output
 
 [GAME] Rivals joined
 [FPS] 60 | [PING] 48ms
@@ -64,65 +64,63 @@ Session ended
 Time played: 1h 32m 30s
 -----------------
 
----
+------------------------------------------------------------
 
-## Requirements
+Requirements
 
+- Windows 10 / 11
 - Node.js 16+
-- Windows OS
 - Roblox Player installed
-- Access to Roblox local log directory
+- Access to local Roblox logs
 
----
+------------------------------------------------------------
 
-## Installation
+Installation
 
 git clone https://github.com/yourusername/roblox-tracker
 cd roblox-tracker
 npm install
 node index.js
 
----
+------------------------------------------------------------
 
-## Configuration
+Windows Auto-Start
 
-const server = "http://localhost:3002";
+Option 1:
+Win + R → shell:startup → place shortcut
 
-This can be changed if you want to connect to a custom backend for storing session data or analytics.
+Option 2:
+Task Manager → Startup tab → add Node.js script
 
----
+------------------------------------------------------------
 
-## Auto-Start (Windows)
+Limitations
 
-1. Press Win + R  
-2. Type: shell:startup  
-3. Press Enter  
-4. Place the executable or shortcut inside the folder  
+- Depends on Roblox log format
+- Windows-only support
+- Requires local file access
+- May trigger antivirus warnings but its not a virus 
+- tested thru many games
 
-Alternatively use Task Manager → Startup tab.
+------------------------------------------------------------
 
----
+Roadmap
 
-## Limitations
+- Web dashboard
+- Cloud sync
+- Per-game analytics
+- UI overlay
+- SQLite integration
+- Graph reports
 
-- FPS is estimated  
-- Log parsing depends on Roblox format  
-- Windows-only support  
-- Requires local Roblox logs  
-- May trigger antivirus warnings due to monitoring behavior  
+------------------------------------------------------------
 
----
+------------------------------------------------------------
+Images
+<img width="547" height="144" alt="image" src="https://github.com/user-attachments/assets/05d5fffd-a1ea-45e1-a8bb-7fe3c0031416" />
 
-## Roadmap
+<img width="283" height="133" alt="image" src="https://github.com/user-attachments/assets/c6dd1ae8-ab9e-49bc-96e2-f92c7e586224" />
 
-- Web dashboard for session history  
-- Cloud sync for stats  
-- Per-game analytics  
-- UI overlay  
-- SQLite integration  
-
----
-
-## License
-
-MIT
+<img width="281" height="132" alt="image" src="https://github.com/user-attachments/assets/14ca02c2-5b07-4921-ab55-c77af6eba49f" />
+------------------------------------------------------------
+License: MIT
